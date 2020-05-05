@@ -13,6 +13,10 @@ module.exports = {
     'no-restricted-globals': 'warn',
     'no-underscore-dangle': 'off',
     'max-len': ['warn', { ignoreComments: true }],
+    'lines-between-class-members': ['warn', 'always', { exceptAfterSingleLine: true }],
+    'space-infix-ops': 'error',
+    'no-multi-spaces': 'error',
+    'space-unary-ops': ['error', { words: true, nonwords: false }],
   },
   overrides: [
     {
@@ -26,7 +30,7 @@ module.exports = {
       },
     },
     {
-      files: ['bin/**/*'],
+      files: ['bin/**/*', 'scripts/**/*'],
       rules: {
         'no-console': 'off',
         'import/no-extraneous-dependencies': 'off',

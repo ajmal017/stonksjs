@@ -33,7 +33,9 @@
     "start": "node index.js",
     "lint": "eslint . --fix",
     "test": "jest --coverage",
-    "release": "dotenv release-it"
+    "release": "dotenv release-it",
+    "prelong-short": "node scripts/scraper.js",
+    "long-short": "node scripts/long-short.js"
   },
   "author": {
     "name": "Erik Nielsen",
@@ -43,10 +45,14 @@
   "license": "ISC",
   "dependencies": {
     "@alpacahq/alpaca-trade-api": "^1.2.9",
+    "camelcase-keys": "^6.2.2",
     "chalk": "^4.0.0",
+    "cheerio": "^1.0.0-rc.3",
     "date-fns": "^2.11.1",
     "dotenv": "^8.2.0",
     "lodash": "^4.17.15",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
     "technicalindicators": "^3.1.0"
   },
   "devDependencies": {

@@ -105,8 +105,11 @@ dist
 .umi
 
 token.txt
-data/
+data/*.js
+data/*.json
 output/
 .tmp/
 tmp/
 .runtimeconfig.json
+old/
+scripts/*.json

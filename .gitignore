@@ -113,3 +113,4 @@ tmp/
 .runtimeconfig.json
 old/
 scripts/*.json
+lib/

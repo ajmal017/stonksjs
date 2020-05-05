@@ -34,8 +34,8 @@
     "lint": "eslint . --fix",
     "test": "jest --coverage",
     "release": "dotenv release-it",
-    "prelong-short": "node scripts/scraper.js",
-    "long-short": "node scripts/long-short.js"
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build"
   },
   "author": {
     "name": "Erik Nielsen",
@@ -56,7 +56,10 @@
     "technicalindicators": "^3.1.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-flow": "^7.9.0",
     "@release-it/conventional-changelog": "^1.1.4",
     "auto-changelog": "^2.0.0",
     "babel-eslint": "^10.1.0",

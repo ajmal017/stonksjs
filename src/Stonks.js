@@ -35,6 +35,12 @@ class Stonks {
     if (!keyId || !secretKey) {
       throw new Error('keyId and secretKey are required');
     }
+
+    // set global environment vars
+    process.env.ALPACA_API_KEY = keyId;
+    process.env.ALPACA_API_SECRET = secretKey;
+    process.env.ALPACA_PAPER_TRADING = paper;
+
     this.Alpaca = Alpaca;
     this.keyId = keyId;
     this.secretKey = secretKey;

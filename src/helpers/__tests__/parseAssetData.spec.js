@@ -1,5 +1,5 @@
 const parseAssetData = require('../parseAssetData');
-const bars = require('../__mocks__/bars');
+const bars = require('../../../__mocks__/bars');
 
 const expectedObject = {
   timestamp: 'number',

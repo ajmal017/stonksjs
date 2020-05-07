@@ -8,5 +8,6 @@
     "**/dist": true,
     "**/.tmp": true,
     "**/tmp": true
-  }
+  },
+  "javascript.validate.enable": false
 }
